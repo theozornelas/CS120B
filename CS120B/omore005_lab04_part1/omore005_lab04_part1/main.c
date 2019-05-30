@@ -77,7 +77,7 @@ int main(void)
 {
 	//initialize Inputs
 	DDRA = 0x00; PORTA = 0xFF; // Configure port A's pins 0-3 as button input
-	state = PINA;
+	state = ~(PINA);
 
     while (1) 
     {
